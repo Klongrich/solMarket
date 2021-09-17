@@ -10,6 +10,7 @@ var splToken = require('@solana/spl-token');
 
   // Generate a new wallet keypair and airdrop SOL
   var fromWallet = web3.Keypair.generate();
+  
   var fromAirdropSignature = await connection.requestAirdrop(
     fromWallet.publicKey,
     web3.LAMPORTS_PER_SOL,
